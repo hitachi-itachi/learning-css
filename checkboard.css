@@ -1,0 +1,17 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 64px)
+}
+
+.square {
+    width: 64px;
+    height: 64px;
+    background: black;
+}
+
+.square:nth-child(8n + 1),
+.square:nth-child(8n + 3),
+.square:nth-child(8n + 6),
+.square:nth-child(8n + 8) {
+    background: red;
+}
